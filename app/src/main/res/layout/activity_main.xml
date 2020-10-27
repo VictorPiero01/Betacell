@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/icon"
+            android:layout_marginBottom="50dp"
+            android:padding="16dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_usuario"
+            android:hint="@string/Ed_User"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#ccc"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editex"
+            android:padding="10dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_contra"
+            android:hint="@string/Ed_pass"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#ccc"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/editex"
+            android:padding="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_forma"
+            android:elevation="5dp"
+            android:text="@string/btn_ini"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_forma"
+            android:elevation="5dp"
+            android:text="@string/btn_regis"
+            android:textColor="#FFFFFF" />
+       
+
+    </LinearLayout>
+
+
+</RelativeLayout>
